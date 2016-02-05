@@ -15,6 +15,7 @@ var path          = require('path'),
     configUrl     = require('./url'),
     packageInfo   = require('../../../package.json'),
     i18n          = require('../i18n'),
+    google        = require('./google'),
     appRoot       = path.resolve(__dirname, '../../../'),
     corePath      = path.resolve(appRoot, 'core/'),
     testingEnvs   = ['testing', 'testing-mysql', 'testing-pg'],
@@ -40,6 +41,13 @@ function ConfigManager(config) {
     if (config && _.isObject(config)) {
         this.set(config);
     }
+
+    // Must override here to ensure that database parameters are set before
+    // the database connection is established.  This normally happens in the
+    // call to .set() from the call to .init() from .load().  If we postpone
+    // this, the database connection will be established with the default
+    // parameters.
+    this.set(google.getConfigOverrides());
 }
 
 // Are we using sockets? Custom socket or the default?
