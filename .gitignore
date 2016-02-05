@@ -11,6 +11,7 @@ pids
 logs
 results
 
+# 3rd-party modules
 npm-debug.log
 node_modules
 bower_components
@@ -30,6 +31,9 @@ Session.vim
 .netrwhist
 .vimrc
 *~
+
+# emacs-related
+**/#*#
 
 # TernJS
 .tern-project
@@ -57,8 +61,6 @@ CHANGELOG.md
 # Test generated files
 /core/test/functional/*.png
 /core/test/coverage
-
-/config.js
 
 # Built asset files
 /core/built
