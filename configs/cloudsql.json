@@ -1,0 +1,8 @@
+{
+    "database-client": "mysql",
+    "database-connection-host": "23.236.50.73",
+    "database-connection-user": "ghost",
+    "database-connection-password": "TrickOrTreat!",
+    "database-connection-database": "ghost",
+    "database-connection-charset": "utf8"
+}

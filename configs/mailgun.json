@@ -1,0 +1,8 @@
+{
+    "mail-transport": "SMTP",
+    "mail-options-host": "smtp.mailgun.org",
+    "mail-options-port": 2525,
+    "mail-options-service": "Mailgun",
+    "mail-options-auth-user": "postmaster@sandbox2621bbc80f4e4d4a865f4e2ad0eb69cd.mailgun.org",
+    "mail-options-auth-pass": "9b1afc959bc1e5da64708c53bccc0f06"
+}

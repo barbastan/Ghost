@@ -1,0 +1,8 @@
+{
+    "mail-transport": "SMTP",
+    "mail-options-host": "smtp.sendgrid.net",
+    "mail-options-port": 2525,
+    "mail-option-service": "Sendgrid",
+    "mail-options-auth-user": "barbastan",
+    "mail-options-auth-pass": "budgie2016"
+}
